@@ -1,0 +1,46 @@
+
+<button class="btn btn-danger btn-circle btn-sm" (click)="x()">X</button>
+
+<h3>NEW REGISTRATION</h3>
+<form [formGroup]="loginform">
+  <div class="class-Group">
+
+
+<label for="Sno">Sno</label>
+<input type="text" class="form-control" placeholder="Enter Sno" formControlName="Sno"><br><br>
+
+<label for="Hotel">Hotel</label>
+<!-- <input type="text" class="form-control" placeholder="Enter Hotel name" formControlName="Hotel"><br><br> -->
+<select class="form-control" formControlName="Hotel">
+
+  <option value="Marriot">Marriot</option>
+  <option value="Aria">Aria</option>
+  
+
+</select>
+<label for="Arrival">Arrival</label>
+<input type="date" class="form-control" formControlName="Arrival"><br><br>
+
+<label for="Departure">Departure</label>
+<input type="date" class="form-control" formControlName="Departure"><br><br>
+
+<label for="Types">Types</label>
+<select class="form-control" formControlName="Types" >
+  <option value="not-mentioned">Select</option>
+<option value="Luxury-Suite">Luxury-Suite</option>
+<option value="Suite">Suite</option>
+<option value="Economy">Economy</option>
+</select>
+<!--<input type="text" class="form-control"formControlName="Types"><br><br>-->
+
+<label for="Guests">Guests</label>
+<input type="text" class="form-control"formControlName="Guests"><br><br>
+
+<label for="price">Price</label>
+<input type="text" class="form-control"formControlName="price"><br><br>
+
+<button class="btn btn-primary" (click)="save()">save</button>|
+<button class="btn btn-danger" (click)="clear()" >Reset</button>
+
+</div>
+</form>
